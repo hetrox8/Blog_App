@@ -1,4 +1,4 @@
-ActiveRecord::Schema[7.1].define(version: 2_023_10_25_143_040) do
+ActiveRecord::Schema[7.1].define(version: 202_310_251_430_40) do
   enable_extension 'plpgsql'
 
   create_table_comments
