@@ -4,18 +4,21 @@ on: pull_request
 
 jobs:
   rubocop:
-    name: Rubocop
+    name: RuboCop
     runs-on: ubuntu-22.04
     
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-ruby@v1
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: actions/setup-ruby@v1
         with:
           ruby-version: ">=3.1.x"
-      - name: Setup Rubocop
+      - name: Install RuboCop and Configuration
         run: |
-          gem install --no-document rubocop -v '>= 1.0, < 2.0' # https://docs.rubocop.org/en/stable/installation/
+          gem install --no-document rubocop -v '>= 1.0, < 2.0'
           [ -f .rubocop.yml ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/ruby/.rubocop.yml
-      - name: Rubocop Report
+      - name: RuboCop Report
         run: rubocop --color
-        
+      - name: Check RuboCop Installation
+        run: rubocop --version
