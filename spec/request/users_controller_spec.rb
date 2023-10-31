@@ -9,9 +9,9 @@ RSpec.describe UsersController, type: :request do
       get '/users'
 
       expect(assigns(:users)).to eq([user1, user2])
-      expect(response).to have_http_status(200)             # Check response status
+      expect(response).to have_http_status(200)            # Check response status
       expect(response).to render_template(:index)           # Check correct template rendering
-      expect(response.body).to include("Welcome to user index page") # Check response body content
+      expect(response.body).to include('Welcome to user index page') # Check response body content
     end
   end
 
@@ -22,9 +22,9 @@ RSpec.describe UsersController, type: :request do
       get "/users/#{user.id}"
 
       expect(assigns(:user)).to eq(user)
-      expect(response).to have_http_status(200)             # Check response status
-      expect(response).to render_template(:show)            # Check correct template rendering
-      expect(response.body).to include("Welcome to user show page") # Check response body content
+      expect(response).to have_http_status(200)            # Check response status
+      expect(response).to render_template(:show)           # Check correct template rendering
+      expect(response.body).to include('Welcome to user show page') # Check response body content
     end
   end
 end
