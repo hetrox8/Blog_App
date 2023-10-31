@@ -1,4 +1,4 @@
-require_relative 'rails_helper'
+require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
   let(:user) do
@@ -23,7 +23,7 @@ RSpec.describe Comment, type: :model do
   subject do
     Comment.new(
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      post_id: post.id, # Correct attribute name and use post.id
+      posts_id: post.id,
       author: user
     )
   end
@@ -40,7 +40,7 @@ RSpec.describe Comment, type: :model do
       it 'updates the comments_counter of the post' do
         subject.increment_post_comments_counter
         post.reload
-        expect(post.comments_counter).to eq(2) # Since you're incrementing by 1 in your model
+        expect(post.comments_counter).to eq(2)
       end
     end
   end
