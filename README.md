@@ -21,7 +21,7 @@
 
 # 📖 Blog App <a name="about-blog-project"></a>
 
-This is a Blog App build with Rails
+This is a Blog App build with Ruby on Rails where clients can post , comment and also leave a like for the favorite post they like.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -98,10 +98,9 @@ To run the project, execute the following command in the terminal:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](git@github.com:hetrox8/Rails_Blog_App.git/issues).
+Feel free to check the [issues page](https:/https://github.com/hetrox8/Blog_App/issues) for any open issues or to report a new one.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## ⭐️ Show your support <a name="support"></a>
 
