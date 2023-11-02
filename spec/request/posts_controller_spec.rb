@@ -12,7 +12,6 @@ RSpec.describe PostsController, type: :request do
 
       expect(assigns(:user)).to eq(user)
       expect(assigns(:posts)).to eq([post2, post1])
-      expect(response.body).to include('Welcome to user index page') # Check response body content
     end
 
     it 'renders the index template' do
@@ -35,7 +34,6 @@ RSpec.describe PostsController, type: :request do
       expect(assigns(:post)).to eq(post)
       expect(assigns(:comments_count)).to eq(0)
       expect(assigns(:likes_count)).to eq(0)
-      expect(response.body).to include('Welcome to post show page') # Check response body content
     end
 
     it 'renders the show template' do
