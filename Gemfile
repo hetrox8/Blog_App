@@ -3,8 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.2'
 
-gem 'bootstrap_pagination'
 gem 'bootsnap', require: false
+gem 'bootstrap_pagination'
 gem 'importmap-rails'
 gem 'jbuilder'
 gem 'pg'
@@ -19,7 +19,6 @@ gem 'will_paginate'
 gem 'will_paginate-bootstrap'
 
 group :development, :test do
-  gem 'bootsnap', require: false
   gem 'debug', platforms: %i[mri mingw x64_mingw]
 end
 
