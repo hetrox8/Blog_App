@@ -1,4 +1,7 @@
 # Blog_App
+<div align="center">
+  <img src="./personalisation/logo.png" alt="logo" width="140"  height="auto" />
+</div>
 <a name="readme-top"></a>
 
 # 📗 Table of Contents
