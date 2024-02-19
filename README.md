@@ -24,7 +24,7 @@
 
 # 📖 Blog App <a name="about-blog-project"></a>
 
-This is a Blog App build with Ruby on Rails where clients can post , comment and also leave a like for the favorite post they like.
+This is a Blog App build with Ruby on Rails where clients can post and comment and also leave a like for the favorite post they like.
 
 ## 🛠 Built With <a name="built-with"></a>
 
